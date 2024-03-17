@@ -4,7 +4,7 @@
 
 .sobre_mim p{
 
-  font-size: 2.5rem;
+  font-size: clamp(1.3rem, 2vw, 2.5rem);
 }
 
 .sobre_mim {
@@ -36,7 +36,7 @@
   border-radius: 15rem;
   /* borda arredondada */
   margin: 1rem 0 0 0;
-  font-size: 3rem;
+  font-size: clamp(2rem, 2vw, 3rem);
 }
 
 
@@ -66,7 +66,7 @@
 }
 
 .barra i {
-  font-size: 1.5rem;
+  font-size: clamp(1.3rem, 2vw, 2.5rem);
   margin: 0 1rem 0 0;
 }
 
@@ -103,4 +103,46 @@
   /* cor da barra css3 */
   width: 25%;
   /* porcentagem da barra css3 */
+}
+
+/* Para celular pequeno */
+@media only screen and (max-width: 600px) {
+  .sobre_mim {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   flex-direction: column;
+    padding: 2rem;
+  }
+
+  .sobre_mim img{
+    max-width: 250px;
+  }
+
+  .barras {
+  
+    width: 85%;
+ 
+  }
+
+  .barra{
+    padding: 0 0 0 1rem;
+  }
+}
+
+/* Para celular médio */
+@media only screen and (min-width: 601px) and (max-width: 1024px) {
+  .sobre_mim {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+}
+
+/* Para celular grande */
+@media only screen and (min-width: 1025px) {
+  .sobre_mim {
+    display: grid;
+    grid-template-columns: auto;
+    gap: 50px;
+  }
 }

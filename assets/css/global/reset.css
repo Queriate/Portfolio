@@ -25,3 +25,13 @@ section {
 html {
     background: var(--primary-1);
 }
+
+@media only screen and (max-width: 200px){
+
+    section {
+        
+        height: 110vh;
+        margin: 0 auto;
+        position: relative;
+    }
+}
