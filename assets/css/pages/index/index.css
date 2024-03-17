@@ -1,0 +1,7 @@
+@import '../../global/global.css';
+
+@import 'partials/apresentacao.css';
+@import 'partials/sobre_mim.css';
+@import 'partials/projetos.css';
+@import 'partials/header.css';
+@import 'partials/footer.css';

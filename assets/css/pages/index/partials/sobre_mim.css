@@ -1,0 +1,106 @@
+.sobre_mim p+p {
+  margin: 2.5rem 0 0 0;
+}
+
+.sobre_mim p{
+
+  font-size: 2.5rem;
+}
+
+.sobre_mim {
+  display: grid;
+  grid-template-columns: auto auto;
+
+  gap: 50px;
+
+}
+
+.perfil {
+  grid-row: 1 / span 2;
+}
+
+.minhas_informacoes {
+  grid-column: 2;
+
+  text-align: justify;
+
+  color: var(--primary-2);
+}
+
+/* ******************fim informacoes**************** */
+
+
+
+.borda {
+  border: 1px solid white;
+  border-radius: 15rem;
+  /* borda arredondada */
+  margin: 1rem 0 0 0;
+  font-size: 3rem;
+}
+
+
+
+.barras {
+  display: flex;
+  flex-direction: column;
+  width: 75%;
+  /* largura das barras */
+  margin: 4rem 0 0 0;
+}
+
+.barra {
+  height: 20px;
+  /* altura das barras */
+  border-radius: 1rem;
+  /* borda arredondada */
+  margin: 0;
+
+  display: flex;
+  justify-content: start;
+  align-items: center;
+
+  color: var(--primary-2);
+
+  padding: 0 0 0 2rem;
+}
+
+.barra i {
+  font-size: 1.5rem;
+  margin: 0 1rem 0 0;
+}
+
+.java {
+  background: var(--linear-gradient);
+  /* cor da barra php */
+  width: 100%;
+  /* porcentagem da barra php */
+}
+
+.php {
+  background: var(--linear-gradient);
+  /* cor da barra php */
+  width: 75%;
+  /* porcentagem da barra php */
+}
+
+.js {
+  background: var(--linear-gradient);
+  /* cor da barra js */
+  width: 25%;
+  /* porcentagem da barra js */
+}
+
+.html5 {
+  background: var(--linear-gradient);
+  /* cor da barra html5 */
+  width: 25%;
+  /* porcentagem da barra html5 */
+}
+
+.css3 {
+  background: var(--linear-gradient);
+  /* cor da barra css3 */
+  width: 25%;
+  /* porcentagem da barra css3 */
+}

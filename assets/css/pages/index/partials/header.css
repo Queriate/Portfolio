@@ -1,0 +1,33 @@
+.header {
+    display: flex;
+    max-width: 1000px;
+    margin: 0 auto;
+    height: 100px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header {
+    background: var(--primary-1);
+}
+
+.header .logo img{
+    max-width: 35px;
+}
+
+.header .traco {
+    width: 25px;
+    height: 3px;
+    background: var(--linear-gradient);
+}
+
+.header .traco::before{
+    content: '';
+    width: 25px;
+    height: 3px;
+    background: var(--linear-gradient);
+    margin: .7rem 0 0 0;
+    display: block;
+
+}
+/* *******************fim header******************* */

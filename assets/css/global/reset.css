@@ -1,0 +1,27 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+    font-size: 62.5%;
+
+    font-family: 'gracial_regular';
+}
+
+a{
+    color: inherit;
+    /* Mantém a mesma cor do pai */
+    text-decoration: none;
+    /* Remove o sublinhado */
+}
+
+section {
+    max-width: 1000px;
+    height: 80vh;
+    margin: 0 auto;
+    position: relative;
+}
+
+html {
+    background: var(--primary-1);
+}
