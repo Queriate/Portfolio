@@ -1,84 +1,38 @@
-.projetos {
+.projetos{
     display: flex;
-    flex-direction: column;
-
     justify-content: center;
     align-items: end;
-
-    gap: 1.5rem;
-
 }
 
-.projetos img {
-    margin: 0 1.5rem 0 0 ;
-    box-shadow: 1.5rem 1.5rem 1.5rem;
-
-    color: rgba(0, 0, 0, .6);
-}
-
-.info{
-    margin: 1.5rem;
-}
-
-.calculadora {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+.projeto {
+    margin: 2rem;
+    padding: 2.5rem;
 
     color: var(--primary-2);
-}
-
-.calculadora h2{
-    font-size: 2rem;
-    margin: 0 0 .5rem 0;
     text-align: right;
 }
 
-.calculadora p{
-    font-size: 1.5rem;
-    text-align: right;
-
+.projeto h2 {
+    font-size: clamp(1.2rem, 2vw, 2.5rem);
+    margin: 0 0 1rem 0; 
 }
 
-/* ******************fim calc*************** */
-
-.blog {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-
-    color: var(--primary-2);
+.projeto p {
+    font-size: clamp(1rem, 1vw, 1.5rem);
+    margin: 0 0 1rem 0; 
 }
 
-.blog h2{
-    font-size: 2rem;
-    margin: 0 0 .5rem 0;
-    text-align: right;
-}
+@media (max-width: 600px){
 
-.blog p{
-    font-size: 1.5rem;
-    text-align: right;
+    .projetos{
+        flex-wrap: wrap;
+    }
 
-}
-/* ******************fim calc*************** */
-
-.sistema_login {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-
-    color: var(--primary-2);
-}
-
-.sistema_login h2{
-    font-size: 2rem;
-    margin: 0 0 .5rem 0;
-    text-align: right;
-}
-
-.sistema_login p{
-    font-size: 1.5rem;
-    text-align: right;
-
+    .projeto {
+        margin: .5rem;
+        padding: 2.5rem;
+    
+        color: var(--primary-2);
+        text-align: right;
+    }
 }
