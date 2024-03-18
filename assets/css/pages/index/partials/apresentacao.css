@@ -2,6 +2,7 @@
     display: flex;
     justify-content: start;
     align-items: center;
+    height: 80vh;
 }
 
 .apresentacao .informacao {
@@ -20,7 +21,7 @@
 }
 
 .apresentacao .informacao p {
-    font-size: clamp(1.8rem, 4vw, 4.5rem); /* Define um tamanho de fonte responsivo */
+    font-size: clamp(1.8rem, 3vw, 4rem); /* Define um tamanho de fonte responsivo */
     color: var(--primary-3);
     font-family: gracial_regular;
     letter-spacing: clamp(.5rem, 1.2vw, 1.2rem);
@@ -56,5 +57,11 @@
     100% {
         transform: translateY(0);
         filter: blur(0);
+    }
+}
+
+@media only screen and (max-width: 600px){
+    .apresentacao{
+        height: 50vh;
     }
 }
