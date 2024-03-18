@@ -4,14 +4,14 @@
 
 .sobre_mim p{
 
-  font-size: clamp(1.3rem, 2vw, 2.5rem);
+  font-size: clamp(1.3rem, 1.5vw, 2rem);
 }
 
 .sobre_mim {
   display: grid;
   grid-template-columns: auto auto;
 
-  gap: 50px;
+  gap: 25px;
 
 }
 
@@ -27,6 +27,24 @@
   color: var(--primary-2);
 }
 
+.sobre_mim .about {
+  color: var(--primary-2);
+  font-size: clamp(1rem, 2vw, 2rem); /* Define um tamanho de fonte responsivo */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: absolute;
+  bottom: 0;
+  right: 0%;
+  margin: 5px;
+}
+
+.sobre_mim .seta {
+  max-width: 15px;
+  margin: 1.1rem 0 0 0;
+  animation: subirDescer 2s infinite alternate ease-in-out;
+}
+
 /* ******************fim informacoes**************** */
 
 
@@ -36,7 +54,7 @@
   border-radius: 15rem;
   /* borda arredondada */
   margin: 1rem 0 0 0;
-  font-size: clamp(2rem, 2vw, 3rem);
+  font-size: clamp(2rem, 1.5vw, 2rem);
 }
 
 
@@ -66,7 +84,7 @@
 }
 
 .barra i {
-  font-size: clamp(1.3rem, 2vw, 2.5rem);
+  font-size: clamp(1.3rem, 1.5vw, 2rem);
   margin: 0 1rem 0 0;
 }
 
@@ -108,15 +126,11 @@
 /* Para celular pequeno */
 @media only screen and (max-width: 600px) {
   .sobre_mim {
+    height: 150vh;
    display: flex;
    justify-content: center;
    align-items: center;
    flex-direction: column;
-    padding: 2rem;
-  }
-
-  .sobre_mim img{
-    max-width: 250px;
   }
 
   .barras {
@@ -127,22 +141,5 @@
 
   .barra{
     padding: 0 0 0 1rem;
-  }
-}
-
-/* Para celular médio */
-@media only screen and (min-width: 601px) and (max-width: 1024px) {
-  .sobre_mim {
-    display: grid;
-    grid-template-columns: 1fr;
-  }
-}
-
-/* Para celular grande */
-@media only screen and (min-width: 1025px) {
-  .sobre_mim {
-    display: grid;
-    grid-template-columns: auto;
-    gap: 50px;
   }
 }
