@@ -31,8 +31,5 @@
     .projeto {
         margin: .5rem;
         padding: 2.5rem;
-    
-        color: var(--primary-2);
-        text-align: right;
     }
 }
