@@ -31,3 +31,10 @@
 
 }
 /* *******************fim header******************* */
+
+
+@media (max-width: 600px){
+    .header{
+        padding: 3rem;
+    }
+}
