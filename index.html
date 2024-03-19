@@ -55,15 +55,35 @@
 
 			<div class="minhas_informacoes">
 				<!-- Descrição pessoal / Personal description -->
-				<p>Hello, I'm Queriate and I've been working in the information field for 9 years, the last 5 as a freelance IT
-					teacher. Since I was a child, I developed an interest in computers, learning programming in Java and C#. I'm
-					currently exploring Java Script, I have courses in web and mobile development.</p>
+				<!-- Descrição pessoal / Personal description -->
+<p class="lang-en">
+	Hello, I'm Queriate and I've been working in the information field for 9 years, the last 5 as a freelance IT teacher. Since I was a child, I developed an interest in computers, learning programming in Java and C#. I'm currently exploring JavaScript, and I have taken courses in web and mobile development.
+</p>
 
-				<!-- Formação acadêmica e habilidades / Academic background and skills -->
-				<p> <i class="fa-solid fa-graduation-cap"></i> Bachelor's degree in Computer Science from Universidade Potiguar
-					(UNP) - RN</p>
+<p class="lang-pt-br" style="display: none;">
+	Olá, eu sou Queriate e trabalho na área de informática há 9 anos, sendo os últimos 5 como professor de TI freelancer. Desde criança, desenvolvi interesse por computadores, aprendendo programação em Java e C#. Atualmente, estou explorando JavaScript e tenho feito cursos em desenvolvimento web e mobile.
+</p>
 
-				<p><i class="fa-solid fa-language" style="color: #3d842a;"></i> PT - BR, native speaker</p>
+<!-- Formação acadêmica e habilidades / Academic background and skills -->
+<p class="lang-en">
+	<i class="fa-solid fa-graduation-cap"></i> Bachelor's degree in Computer Science from Universidade Potiguar (UNP) - RN
+</p>
+
+<p class="lang-pt-br" style="display: none;">
+	<i class="fa-solid fa-graduation-cap"></i> Bacharel em Ciência da Computação pela Universidade Potiguar (UNP) - RN
+</p>
+
+<p class="lang-en">
+	<i class="fa-solid fa-language" style="color: #3d842a;"></i> PT - BR, native speaker
+</p>
+
+<p class="lang-pt-br" style="display: none;">
+	<i class="fa-solid fa-language" style="color: #3d842a;"></i> PT - BR, língua materna
+</p>
+
+<!-- Botões de alternar idiomas -->
+<button onclick="toggleLanguage('en')">English</button>
+<button onclick="toggleLanguage('pt-br')">Português</button>
 
 				<!-- Barra de progresso das habilidades / Skills progress bar -->
 				<div class="barras ">
@@ -176,6 +196,9 @@
 			<a href="https://www.linkedin.com/in/queriate-silva/" target="_blank"><i class="fa-brands fa-linkedin-in"></i></a>
 		</footer>
 	</main>
+
+	<script src="assets/js/script.js"></script>
+
 </body>
 
 </html>
