@@ -10,18 +10,20 @@
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    animation: bounceInRight; 
-    animation-duration: 1.5s; 
+    animation: bounceInRight;
+    animation-duration: 1.5s;
 }
 
 .apresentacao .informacao h1 {
-    font-size: clamp(4rem, 10vw, 10rem); /* Define um tamanho de fonte responsivo */
+    font-size: clamp(4rem, 10vw, 10rem);
+    /* Define um tamanho de fonte responsivo */
     color: var(--primary-2);
     font-family: gracial_bold;
 }
 
 .apresentacao .informacao p {
-    font-size: clamp(1.8rem, 3vw, 4rem); /* Define um tamanho de fonte responsivo */
+    font-size: clamp(1.8rem, 3vw, 4rem);
+    /* Define um tamanho de fonte responsivo */
     color: var(--primary-3);
     font-family: gracial_regular;
     letter-spacing: clamp(.5rem, 1.2vw, 1.2rem);
@@ -29,7 +31,8 @@
 
 .apresentacao .about {
     color: var(--primary-2);
-    font-size: clamp(1rem, 2vw, 2rem); /* Define um tamanho de fonte responsivo */
+    font-size: clamp(1rem, 2vw, 2rem);
+    /* Define um tamanho de fonte responsivo */
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -50,18 +53,25 @@
         transform: translateY(0);
         filter: blur(0);
     }
+
     50% {
         transform: translateY(-10px);
         filter: blur(0.4px);
     }
+
     100% {
         transform: translateY(0);
         filter: blur(0);
     }
 }
 
-@media only screen and (max-width: 600px){
-    .apresentacao{
+@media only screen and (max-width: 600px) {
+    .apresentacao {
         height: 50vh;
+    }
+
+    /* font-size para responsivo */
+    .apresentacao .about {
+        font-size: clamp(1.8rem, 2vw, 2rem);
     }
 }
